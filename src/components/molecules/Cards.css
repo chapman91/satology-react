@@ -1,0 +1,168 @@
+
+
+/* Default css */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(-text-color);
+} */
+
+/* card container layout */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-height: 100vh;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* top and bottom cards  */
+.top-cards,
+.bottom-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* card layout */
+.card {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 1.6em;
+  padding: 1.5rem;
+  margin: 1.875rem;
+  flex: 1; /* Equal width on all screen sizes */
+  background-color: var(--card-bg);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: auto;
+}
+
+/* color hover effect */
+.card:hover {
+  border-color: var(--secondary-color);
+}
+
+/* card heading  */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h3 {
+  margin-right: 0.8rem;
+  color: var(--primary-color);
+}
+
+/* Top  */
+.top-cards > :nth-child(1 of .card):hover {
+  /* border-color: var(--card-1-hover-bg); */
+
+  box-shadow: 0 0 10px var(--card-1-hover-bg);
+}
+
+/* hover effect second card */
+.top-cards > :nth-child(2 of .card):hover {
+  box-shadow: 0 0 10px var(--card-2-hover-bg);
+}
+
+.bottom-cards > :nth-child(1 of .card):hover {
+  box-shadow: 0 0 10px var(--card-3-hover-bg);
+}
+
+.bottom-cards > :nth-child(2 of .card):hover {
+  box-shadow: 0 0 10px var(--card-4-hover-bg);
+}
+
+/* hover icon color */
+.top-cards .card:nth-child(1):hover img {
+  box-shadow: 0 0 10px var(--card-1-hover-bg);
+}
+
+/* hover text color  */
+.top-cards .card:nth-child(1):hover h3 {
+  color: var(--card-1-hover-bg);
+}
+
+/* hover icon color */
+.top-cards .card:nth-child(2):hover img {
+  box-shadow: 0 0 10px var(--card-2-hover-bg);
+  backdrop-filter: blur();
+}
+
+/* hover text color  */
+.top-cards .card:nth-child(2):hover h3 {
+  color: var(--card-2-hover-bg);
+}
+
+/* hover icon color */
+.bottom-cards .card:nth-child(1):hover img {
+  box-shadow: 0 0 10px var(--card-3-hover-bg);
+}
+
+/* hover text color  */
+.bottom-cards .card:nth-child(1):hover h3 {
+  color: var(--card-3-hover-bg);
+}
+
+/* hover icon color */
+.bottom-cards .card:nth-child(2):hover img {
+  box-shadow: 0 0 10px var(--card-4-hover-bg);
+}
+
+/* hover icon color */
+.bottom-cards .card:nth-child(2):hover h3 {
+  color: var(--card-4-hover-bg);
+}
+
+@media screen and (max-width: 600px) {
+  /* Stack cards on small screens */
+  .card {
+    width: 92%; /* Cards take up full width on smaller screens */
+  }
+}
+
+/* Mobile styles (up to 768px) */
+@media (max-width: 768px) {
+  .top-cards,
+  .bottom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet styles (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    max-width: 20.625rem;
+  }
+}
+
+/* Medium screens (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .card {
+    max-width: 28.125rem;
+  }
+}
+
+/* Large screens (greater than 1440px) */
+@media (min-width: 1441px) {
+  .card {
+    max-width: 39.0625;
+  }
+}

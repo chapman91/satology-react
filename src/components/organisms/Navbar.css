@@ -1,0 +1,135 @@
+
+
+.navbar {
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Brand Name */
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.logo img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 10px;
+}
+
+.colored {
+  color: var(--secondary-color);
+}
+
+/* Nav items styles */
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  display: block;
+}
+
+.nav-list a:hover {
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.web3-connect {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Toggle Button Styles */
+.hamburger-menu {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger-menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Styles for screens between 481px and 767px (Tablet) */
+@media (max-width: 768px) {
+  /* control nav items and connect button */
+  .nav-main {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /*  */
+  .nav-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    text-align: center;
+  }
+
+  .nav-list li a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* .nav-list.active {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-direction: column;
+  } */
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Hides nav items */
+  .nav-list {
+    /* display: none; */
+    width: 100%;
+  }
+  /* Hides Connect button */
+  .web3-connect {
+    display: none;
+  }
+
+  /*  */
+}
+
+/* Styles for screens between 768px and 991px (Larger Tablet ) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
