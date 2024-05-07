@@ -163,6 +163,6 @@
 /* Large screens (greater than 1440px) */
 @media (min-width: 1441px) {
   .card {
-    max-width: 39.0625;
+    max-width: 39.0625rem;
   }
 }

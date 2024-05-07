@@ -9,11 +9,12 @@ import Button from "./components/atoms/Button"
 function App() {
   return (
     <div className="container background-container">
-     <div className="item"> <Navbar/> </div>
-     <div className="item"> <Header/> </div>
-     <div className="item"> <Cards/> <Button/> </div>
-     
-     <div className="item"> <Footer/> </div>
+      <Navbar/> 
+      <Header/> 
+      <Cards/> 
+      <Button/>
+      <Footer/>
+     {/* <div className="item"> </div> */}
     </div>
   );
 }

@@ -28,7 +28,7 @@ const Navbar = () => {
  }, [])
 
   return (
-  <header id="navbar">
+  
   <nav className="navbar">
     <div className="logo">
       <img src={Logo} alt="Logo" />
@@ -61,7 +61,7 @@ const Navbar = () => {
       <div className="bar" />
     </div>
   </nav>
-</header>
+
 
   )
 }

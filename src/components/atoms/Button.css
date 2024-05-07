@@ -1,12 +1,12 @@
 
 
-body {
+/* body {
   min-height: 100vh;
   display: grid;
   place-items: center;
   background: var(--page-bg);
   color: var(--primary-color);
-}
+} */
 
 .button-container {
   display: flex;

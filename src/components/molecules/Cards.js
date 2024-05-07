@@ -9,13 +9,13 @@ import image4 from "../../images/icons/Frame113.svg"
 const Cards = () => {
   return (
   <>
-  <div className="card-title">
+  
+  <div className="card-section">
+    <div className="card-title">
     <h1>Satoshi Criteria</h1>
     <p>Set the foundation for your collection by specifying the Satoshi Criteria</p>
   </div>
    
-  <div className="card-section">
-    
     {/* first card */}
     <div className="top-cards">
       <div className="card">
