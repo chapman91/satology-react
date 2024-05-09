@@ -1,18 +1,18 @@
 /* styles.css */
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 20px;
 
 }
 
 
-.background-container {
+/* .background-container {
   background-image: url('../src/images/background/background.png');
   background-size: cover;
   background-position: center;
   /* height: 100vh; */
   /* Add any additional styles as needed */
-}
+
 
 

@@ -3,7 +3,6 @@ import Navbar from "./components/organisms/Navbar"
 import Header from "./components/organisms/Header"
 import Cards from "./components/molecules/Cards"
 import Footer from "./components/organisms/Footer"
-import Button from "./components/atoms/Button"
 
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
       <Navbar/> 
       <Header/> 
       <Cards/> 
-      <Button/>
       <Footer/>
      {/* <div className="item"> </div> */}
     </div>

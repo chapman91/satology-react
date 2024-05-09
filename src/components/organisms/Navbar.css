@@ -1,14 +1,15 @@
-
-
 .navbar {
   color: var(--primary-color);
+  /* Flex Tool */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* Position Tool */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  padding: 14px;
 }
 
 /* Brand Name */
@@ -64,10 +65,12 @@
 
 /* Toggle Button Styles */
 .hamburger-menu {
-  position: absolute;
+  /* Position Tool */
+  position: absolute; /* Position element to nearest ancestor */
   top: 2rem;
   right: 1rem;
   display: none;
+  /* Flex Tool */
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -94,6 +97,7 @@
 
   /*  */
   .nav-list {
+    display: none;
     width: 100%;
     flex-direction: column;
   }
@@ -106,12 +110,12 @@
     padding: 0.5rem 1rem;
   }
 
-  /* .nav-list.active {
+  .nav-list.active {
     display: flex;
     font-size: 1.5rem;
     font-weight: 400;
     flex-direction: column;
-  } */
+  }
 
   .hamburger-menu {
     display: flex;

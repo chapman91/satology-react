@@ -5,14 +5,23 @@ import Logo from "../../images/icons/Group 12.svg";
 const Navbar = () => {
   useEffect(() => {
     const menuToggle = document.getElementById("menu-toggle");
-    const navMain = document.querySelector(".nav-main");
+    const navMain = document.querySelector(".nav-list");
     
+    // Adds the 'nav-list.active' class on elements
     const handleMenuToggle = () => {
+
+      // Check if the element exist (is not null)
+      if (navMain !== null) {
       navMain.classList.toggle("active");
+      } else {
+        // The element does not exist, handle the case accordingly
+        console.log('navMain does not exist')
+      }
     }
 
     menuToggle.addEventListener("click", handleMenuToggle);
 
+    // 
     const handleResize = () => {
       if (window.innerWidth > 768) {
         navMain.classList.remove("active");
@@ -21,6 +30,7 @@ const Navbar = () => {
 
     window.addEventListener("resize", handleResize);
 
+    // Returns the results of removing the event listener
     return () => {
       menuToggle.removeEventListener("click", handleMenuToggle);
       window.removeEventListener("resize", handleResize);
@@ -55,7 +65,7 @@ const Navbar = () => {
     <button className="web3-connect" id="connect">
       Web3 Connect
     </button>
-    <div className="hamburger-menu" id="menu-toggle">
+    <div className="hamburger-menu" id="menu-toggle" aria-label="Toggle menu">
       <div className="bar" />
       <div className="bar" />
       <div className="bar" />

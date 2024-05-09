@@ -4,8 +4,6 @@ import "./Header.css"
 const Header = () => {
   return (
     <div>
-  
-    
     <div className="hug">
 
     <div className="title_skill">

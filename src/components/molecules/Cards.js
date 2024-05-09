@@ -4,7 +4,7 @@ import image1 from "../../images/icons/calculator-icon.svg"
 import image2 from "../../images/icons/blocks-icon.svg"
 import image3 from "../../images/icons/calendar.svg"
 import image4 from "../../images/icons/Frame113.svg"
-
+import Button from "../../components/atoms/Button"
 
 const Cards = () => {
   return (
@@ -76,6 +76,7 @@ const Cards = () => {
       </div>
     </div>
 
+   <Button/>
   
   </div>
   </>

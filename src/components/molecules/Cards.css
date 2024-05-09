@@ -15,9 +15,9 @@
 
 /* card container layout */
 .card-section {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
   max-height: 100vh;
 }
 
@@ -27,11 +27,16 @@
   align-items: center;
 }
 
+.card-title h1 {
+  margin-bottom: 30px;
+}
+
+
 /* top and bottom cards  */
 .top-cards,
 .bottom-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* card layout */
@@ -126,6 +131,14 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  /* Centers Card Titles Small Screen */
+ .card-title {
+  text-align: center;
+ }
+
+
+
   /* Stack cards on small screens */
   .card {
     width: 92%; /* Cards take up full width on smaller screens */

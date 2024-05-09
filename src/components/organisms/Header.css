@@ -29,15 +29,15 @@
 .container-skill {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 
 /* Targets outer div */
 .skill {
+  margin: 10%;
   width: 10rem;
-  height: 10rem;
-  position: relative;
-  margin-left: 6rem;
+  position: relative; 
 }
 
 .outer {
@@ -117,6 +117,18 @@ div.skill h5:last-child:hover {
 
 /* Mobile styles (up to 768px) */
 @media (max-width: 768px) {
+  .hug {
+    margin-top: 40%;
+  }
+
+
+  .container-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 /* Tablet styles (769px to 1024px) */
