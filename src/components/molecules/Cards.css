@@ -132,6 +132,14 @@
 
 @media screen and (max-width: 600px) {
 
+  /* Spacing beneath footer */
+  .card-container {
+    margin-bottom: 20%;
+  }
+
+
+
+
   /* Centers Card Titles Small Screen */
  .card-title {
   text-align: center;

@@ -8,7 +8,7 @@ import Button from "../../components/atoms/Button"
 
 const Cards = () => {
   return (
-  <>
+  <div className="card-container">
   
   <div className="card-section">
     <div className="card-title">
@@ -79,7 +79,7 @@ const Cards = () => {
    <Button/>
   
   </div>
-  </>
+  </div>
   )
 }
 
