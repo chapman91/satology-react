@@ -49,16 +49,16 @@ const Navbar = () => {
     <div className="nav-main">
       <ul className="nav-list">
         <li>
-          <a href="javascript:void(0)">TOOLS</a>
+          <a href="#Tools">TOOLS</a>
         </li>
         <li>
-          <a href="javascript:void(0)">LAUNCHPAD</a>
+          <a href="#Launchpad">LAUNCHPAD</a>
         </li>
         <li>
-          <a href="javascript:void(0)">MARKETPLACE</a>
+          <a href="#Launchpad">MARKETPLACE</a>
         </li>
         <li>
-          <a href="javascript:void(0)">ABOUT</a>
+          <a href="#Launchpadss">ABOUT</a>
         </li>
       </ul>
     </div>
