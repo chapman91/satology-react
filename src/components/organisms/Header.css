@@ -117,10 +117,7 @@ div.skill h5:last-child:hover {
 
 /* Mobile styles (up to 768px) */
 @media (max-width: 768px) {
-  .hug {
-    margin-top: 40%;
-  }
-
+ 
 
   .container-skill {
     display: flex;
