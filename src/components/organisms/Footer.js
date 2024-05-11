@@ -12,8 +12,8 @@ const Footer = () => {
             <p>example@example.com</p> 
             </div>
             <div className="footer-images">
-                <img src={Discord} alt="Image 1" />
-                <img src={Twitter} alt="Image 2" />
+                <img src={Discord}  />
+                <img src={Twitter}  />
             </div>
         </div>
         
